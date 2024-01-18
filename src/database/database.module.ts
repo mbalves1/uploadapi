@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { DataSourceOptions } from 'typeorm';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { FileEntity } from 'src/files/entities/file.entity';
 
 export const dataSourceOptions: DataSourceOptions = {
   type: 'postgres',
@@ -9,7 +10,7 @@ export const dataSourceOptions: DataSourceOptions = {
   username: 'postgres',
   password: 'admin',
   database: 'uploadapi',
-  entities: [],
+  entities: [FileEntity],
   synchronize: true,
 };
 
