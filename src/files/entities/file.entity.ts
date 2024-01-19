@@ -20,13 +20,17 @@ export class FileEntity {
   @Column()
   dataStatus: Date;
 
-  @Column()
+  @Column({
+    nullable: true,
+  })
   dataCancelamento: Date;
 
   @Column()
-  valor: number;
+  valor: string;
 
-  @Column()
+  @Column({
+    nullable: true,
+  })
   proximoCiclo: Date;
 
   @Column()
