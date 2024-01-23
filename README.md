@@ -24,12 +24,22 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Este projeto é uma API para envio de arquivos XLSX e CSV. Os arquivos são enviados e salvos no banco de dados PostgreSQL.
+
+Para rodar o projeto, é necessário inicializar o Docker. Após isso, a API estará disponível na porta localhost:3000.
+
+No front-end, o usuário pode inserir o arquivo e visualizar gráficos de análise. Os gráficos podem ser gerados de acordo com o ano escolhido.
 
 ## Installation
 
 ```bash
 $ pnpm install
+```
+
+## Running docker
+
+```bash
+$ docker-compose up -d
 ```
 
 ## Running the app
